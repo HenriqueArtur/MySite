@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 :root {
+  --brand-color: #007aff;
+  --brand-color-bg: linear-gradient(180deg, #f5f5f7, #ffffff);
+  --brand-color-text-1: #1d1d1f;
+  --brand-color-text-2: #6e6e73;
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: white) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -16,6 +20,6 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--brand-color-bg);
   font-family: Arial, Helvetica, sans-serif;
 }
