@@ -3,7 +3,7 @@ export default function Home() {
     <div className="grid items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-sans text-lg">
       <main className="flex flex-col gap-4">
         <div>
-          <p>👋 Hello, I'am <span className="text-brand">Henrique Artur</span>!</p>
+          <p>👋 Hello, I&apos;am <span className="text-brand">Henrique Artur</span>!</p>
           {/* database: https://filess.io/ */}
           <p>I create <u>great experiences</u> by building <u>better software</u>.</p>
         </div>
