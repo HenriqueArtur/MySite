@@ -14,7 +14,7 @@ export default function Home() {
               <Clock />
               <h1 className="text-2xl font-bold">Hello, I&apos;am <span className="text-brand">Henrique Artur</span> 👋</h1>
             </div>
-            <p>I'm a Tech Lead, shaping software, quality, and experience.</p>
+            <p>I&apos;m a Tech Lead, shaping software, quality, and experience.</p>
             <p>I work at the intersection of software, quality, and experience—engineering solutions that elevate both products and people.</p>
           </div>
         </main >
