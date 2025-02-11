@@ -1,27 +1,25 @@
+import Clock from "@/components/clock";
+import Footer from "@/components/footer";
+import { Navigator } from "@/components/Navigator";
+import { Wrapper } from "@/components/Wrapper";
+
 export default function Home() {
   return (
-    <div className="grid items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-sans text-lg">
-      <main className="flex flex-col gap-4">
-        <div>
-          <p>👋 Hello, I&apos;am <span className="text-brand">Henrique Artur</span>!</p>
-          {/* database: https://filess.io/ */}
-          <p>I create <u>great experiences</u> by building <u>better software</u>.</p>
-        </div>
-        <div>
-          <p className="text-brand-text-2 text-base">You are the <u>[position]th</u> awesome person 🤩 to visit my site.</p>
-        </div>
-        <div>
-          <p>My 3 principles:</p>
-          <ul className="text-brand-text-2 list-disc list-inside">
-            <li>Simplicity</li>
-            <li>Quality</li>
-            <li>Experience</li>
-          </ul>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a className="text-brand-text-2 text-base hover:underline" target="_blank" href="https://github.com/HenriqueArtur/MySite">This site project</a>
-      </footer>
-    </div >
+    <>
+      <Navigator />
+      <Wrapper>
+        <main className="py-2 grid grid-cols-5">
+          <div className="flex flex-col gap-2 col-span-3">
+            <div>
+              <Clock />
+              <h1 className="text-2xl font-bold">Hello, I&apos;am <span className="text-brand">Henrique Artur</span> 👋</h1>
+            </div>
+            <p>I&apos;m a Tech Lead, shaping software, quality, and experience.</p>
+            <p>I work at the intersection of software, quality, and experience—engineering solutions that elevate both products and people.</p>
+          </div>
+        </main >
+      </Wrapper>
+      <Footer />
+    </>
   );
 }
